@@ -1,0 +1,93 @@
+*{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://source.unsplash.com/random/900×900/?nature,scene,greenland,snowland);  */
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(244,244,244);
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:20px;
+     overflow-x: hidden;
+    /* overflow-y: auto; */ 
+}
+
+.container h1{
+    text-align: center;
+    /* font-size: ; */
+    margin: 2rem 2rem;
+    font-size: 4rem;
+    letter-spacing: 4px;
+}
+
+.gallery{
+    display: flex;
+    position:relative;
+    /* height:100%; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+}
+
+.image-box{
+   height: 393px;
+    width:32%;
+    margin-bottom:20px;
+    /* border:2PX SOLID YELLOW; */
+    object-fit: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-box img{
+    height:100%;
+    width:100%;
+    filter: grayscale(100%);
+    box-shadow: 0 0 20px #333;
+   object-fit: cover;
+   max-height: 100%;
+   max-width:100%;
+
+}
+
+.image-box:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5s;
+    filter: drop-shadow(10px 10px 10px #333);
+}
+
+.image-box:hover img{
+    filter: grayscale(0%);
+}
+
+.image-box figcaption{
+    opacity: 0;
+    position: absolute;
+    bottom:0;
+    left:0;
+    color: aliceblue;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    width:100%;
+    padding:20px;
+    font-size: 1.4rem;
+    font-weight: 900;
+
+}
+
+.image-box:hover figcaption{
+    opacity: 1;
+    transition: 1s;
+   
+
+}
+
+
+
+
+
